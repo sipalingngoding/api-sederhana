@@ -1,0 +1,28 @@
+GET http://localhost:8000/users
+
+###
+GET http://localhost:8000/users/2
+
+###
+GET http://localhost:8000/search?username=diory
+
+###
+POST http://localhost:8000/user
+Content-Type: application/json
+
+{
+  "username" : "Siska",
+  "address": "Bandung",
+  "country": "Indonesia"
+}
+
+###
+PUT http://localhost:8000/users/1
+Content-Type: application/json
+
+{
+  "username" : "sinagadiory"
+}
+
+###
+DELETE http://localhost:8000/users/4
